@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-02-18T17:19:13Z" product-name="form4_socialmedialinks">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<source><![CDATA[
+				Choose an title for this social media link. <br /><br />
+				Used as text for link and the title attribute.
+				]]></source>
+			</trans-unit>
+			<trans-unit id="identifier.description">
+				<source><![CDATA[
+				Set a unique identifier for the social media link, e.g. twitter, facebooklink, facebookshare. <br /><br />
+				Note that only lower case characters are allowed. <br />
+				The identifier can be used for the TypoScript configuration setup. See documentation for further information about TypoScript configuration.
+				]]></source>
+			</trans-unit>
+			<trans-unit id="type.description">
+				<source><![CDATA[
+				Select the type of the social media link. <br /><br />
+				<strong>Link</strong> = A link with the given URL will be shown. <br />
+				<strong>Script</strong> = The data from the "Script Snippet" field will be displayed directly.
+				]]></source>
+			</trans-unit>
+			<trans-unit id="url.description">
+				<source><![CDATA[
+				Set the URL for the link. <br /><br />
+				There are several placeholders like ###TOKEN### (casesensitive), which will be replaced while rendering. Default placeholders are ###URL### (URL of the current page) and ###TITLE### (Title of the current page). Futher placeholders can be set up in the TypoScript. See documentation for further information about TypoScript configuration.
+				]]></source>
+			</trans-unit>
+			<trans-unit id="html.description">
+				<source><![CDATA[
+				Set the snippet code (mostly javascript). <br /><br />
+				There are several placeholders like ###TOKEN### (casesensitive), which will be replaced while rendering. Default placeholders are ###URL### (URL of the current page) and ###TITLE### (Title of the current page). Futher placeholders can be set up in the TypoScript. See documentation for further information about TypoScript configuration.
+				]]></source>
+			</trans-unit>
+			<trans-unit id="icon.description">
+				<source>(optional) Set the image for the social media link. If empty the title will be used as text for the link.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

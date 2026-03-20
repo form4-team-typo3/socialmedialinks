@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-02-18T17:19:13Z" product-name="form4_socialmedialinks">
+		<header/>
+		<body>
+			<trans-unit id="title.description">
+				<target><![CDATA[
+				Wähle einen Titel für den Social Media Link. <br /><br />
+				Wird für den Linktext und das Titel Attribut verwendet.
+				]]></target>
+			</trans-unit>
+			<trans-unit id="identifier.description">
+				<target><![CDATA[
+				Setze einen einzigartigen Identifier für den Social Media Link, z.B. twitter, facebooklink, facebookshare. <br /><br />
+				Es sind nur Kleinbuchstaben erlaubt. <br />
+				Der Identifier kann für die TypoScript Konfiguration genutzt werden. Weitere Informationen über die TypoScript Konfiguration sind in der Dokumentation zu finden. 
+				]]></target>
+			</trans-unit>
+			<trans-unit id="type.description">
+				<target><![CDATA[
+				Wähle den Typen des Social Media Links. <br /><br />
+				<strong>Link</strong> = Es wird ein Link mit der angebenen URL ausgegeben. <br />
+				<strong>Script</strong> = Die Daten aus dem "Script Snippet" Feld werden direkt ausgegeben.
+				]]></target>
+			</trans-unit>
+			<trans-unit id="url.description">
+				<target><![CDATA[
+				Setze die URL für den Link. <br /><br />
+				Es gibt einige Platzhalter, wie ###TOKEN### (Groß- und Kleinschreibung beachten), die bei der Ausgabe ersetzt werden. Standard Platzhalter sind ###URL### (URL der aktuellen Seite) und ###TITLE### (Titel der aktuellen Seite). Weitere Platzhalter können im TypoScript definiert werden. Weitere Informationen über die TypoScript Konfiguration sind in der Dokumentation zu finden.
+				]]></target>
+			</trans-unit>
+			<trans-unit id="html.description">
+				<target><![CDATA[
+				Setze das Codesnippet (meist JavaScript). <br /><br />
+				Es gibt einige Platzhalter, wie ###TOKEN### (Groß- und Kleinschreibung beachten), die bei der Ausgabe ersetzt werden. Standard Platzhalter sind ###URL### (URL der aktuellen Seite) und ###TITLE### (Titel der aktuellen Seite). Weitere Platzhalter können im TypoScript definiert werden. Weitere Informationen über die TypoScript Konfiguration sind in der Dokumentation zu finden.
+				]]></target>
+			</trans-unit>
+			<trans-unit id="icon.description">
+				<target>(optional) Sezte ein Bild für den Social Media Link. Wenn kein Bild gesetzt ist, wird der Titel als Linktext verwendet.</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

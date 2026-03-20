@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-02-18T15:07:06Z" product-name="form4_socialmedialinks">
+		<header/>
+		<body>
+			<!-- Entity -->
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link">
+				<source>Social Media Link</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.select.aok">
+				<source>AOK</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.identifier">
+				<source>Unique Identifier</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.type.0">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.type.1">
+				<source>Script</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.url">
+				<source>Link URL</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.html">
+				<source>Script Snippet</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.icon">
+				<source>Icon</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.iconselect.default">
+				<source>Please select icon</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.iconselect.facebook">
+				<source>Facebook</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.iconselect.instagram">
+				<source>Instagram</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.iconselect.linkedin">
+				<source>LinkedIn</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.iconselect.x">
+				<source>X</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.iconselect.xing">
+				<source>Xing</source>
+			</trans-unit>
+			<trans-unit id="tx_form4socialmedialinks_domain_model_link.iconselect.youtube">
+				<source>youtube</source>
+			</trans-unit>
+
+			<!-- Plugin -->
+			<trans-unit id="tt_content.plugin.title">
+				<source>Social Media Links</source>
+			</trans-unit>
+			<trans-unit id="tt_content.plugin.description">
+				<source>Shows a list of selected social media links.</source>
+			</trans-unit>
+			<trans-unit id="tt_content.plugin.flexform.elements">
+				<source>Social media links</source>
+			</trans-unit>
+
+			<!-- ExtensionManager -->
+			<trans-unit id="extensionmanager.configuration.import.headline">
+				<source>To import default social media links, please run the update script.</source>
+			</trans-unit>
+			<trans-unit id="extensionmanager.configuration.import.infotext">
+				<source>The following social media links could be created.</source>
+			</trans-unit>
+			<trans-unit id="extensionmanager.configuration.import.facebooklike">
+				<source>Facebook Like Button</source>
+			</trans-unit>
+			<trans-unit id="extensionmanager.configuration.import.facebookcomments">
+				<source>Facebook Comments</source>
+			</trans-unit>
+			<trans-unit id="extensionmanager.configuration.import.twittershare">
+				<source>Twitter Share Link</source>
+			</trans-unit>
+			<trans-unit id="extensionmanager.configuration.import.twitterfollowme">
+				<source>Twitter FollowMe Link</source>
+			</trans-unit>
+			<trans-unit id="extensionmanager.configuration.import.twitterhashtag">
+				<source>Twitter Hashtag</source>
+			</trans-unit>
+			<trans-unit id="extensionmanager.configuration.import.twittermention">
+				<source>Twitter Mention</source>
+			</trans-unit>
+			<trans-unit id="extensionmanager.configuration.import.mailtolink">
+				<source>Mailto Link</source>
+			</trans-unit>
+			<trans-unit id="extensionmanager.configuration.import.linktext">
+				<source>Link to Update Script</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

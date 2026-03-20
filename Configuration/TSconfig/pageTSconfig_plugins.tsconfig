@@ -1,0 +1,17 @@
+mod.wizards.newContentElement.wizardItems {
+	form4_socialmedialinks {
+		header = Social media links
+		elements {
+			form4socialmedialinks_list {
+				iconIdentifier = form4-extension-icon
+				title = LLL:EXT:form4_socialmedialinks/Resources/Private/Language/locallang_db.xlf:tt_content.plugin.title
+				description = LLL:EXT:form4_socialmedialinks/Resources/Private/Language/locallang_db.xlf:tt_content.plugin.description
+				tt_content_defValues {
+					CType = list
+					list_type = form4socialmedialinks_list
+				}
+			}
+		}
+		show := addToList(form4socialmedialinks_list)
+	}
+}

@@ -1,0 +1,54 @@
+
+<f:if condition="{error}">
+	<f:comment>flashMessages are not supported</f:comment>
+	<div class="typo3-messages">
+		<div class="alert alert-danger">
+			<div class="media">
+				<div class="media-left">
+					<span class="fa-stack fa-lg"> <i
+						class="fa fa-circle fa-stack-2x"></i> <i
+						class="fa fa-times fa-stack-1x"></i>
+					</span>
+				</div>
+				<div class="media-body">
+					<h4 class="alert-title">{error.headline}</h4>
+					<div class="alert-message">
+						<f:format.raw>{error.message}</f:format.raw>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</f:if>
+<f:if condition="{message}">
+	<f:comment>flashMessages are not supported</f:comment>
+	<div class="typo3-messages">
+		<div class="alert alert-info">
+			<div class="media">
+				<div class="media-left">
+					<span class="fa-stack fa-lg"> <i
+						class="fa fa-circle fa-stack-2x"></i> <i
+						class="fa fa-times fa-stack-1x"></i>
+					</span>
+				</div>
+				<div class="media-body">
+					<h4 class="alert-title">{message.headline}</h4>
+					<div class="alert-message">
+						<f:format.raw>{message.message}</f:format.raw>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</f:if>
+
+
+<f:form enctype="multipart/form-data" actionUri="{updateScript}">
+	<div class="">
+		<label for="uid">Page Uid</label> <input type="text" id="uid"
+			name="uid" value="{parameterUid}" />
+	</div>
+	<div class="">
+		<input type="submit" name="submit" value="submit" />
+	</div>
+</f:form>

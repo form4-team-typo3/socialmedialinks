@@ -1,0 +1,24 @@
+{
+  "name": "form4/form4-socialmedialinks",
+  "type": "typo3-cms-extension",
+  "description": "form4 Socialmedialinks.",
+  "require": {
+    "typo3/cms-core": "^13.4"
+  },
+  "authors": [
+    {
+      "name": "form4 GmbH",
+      "email": "typo3@form4.de"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "FORM4\\Form4Socialmedialinks\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "form4_socialmedialinks"
+    }
+  }
+}
