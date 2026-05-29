@@ -1,0 +1,39 @@
+{
+  "name": "form4/form4-socialmedialinks",
+  "type": "typo3-cms-extension",
+  "description": "form4 Social Media Links — Social and share links as TYPO3 backend records (URL or small HTML). Output via content element or TypoScript; optional icons and placeholders (e.g. current page URL or title).",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "typo3",
+    "typo3-cms-extension",
+    "social-media",
+    "share-links",
+    "content-element",
+    "typoscript",
+    "placeholders"
+  ],
+  "homepage": "https://extensions.typo3.org/extension/form4_socialmedialinks",
+  "support": {
+    "source": "https://github.com/form4-team-typo3/socialmedialinks",
+    "issues": "https://github.com/form4-team-typo3/socialmedialinks/issues"
+  },
+  "require": {
+    "typo3/cms-core": "^13.4"
+  },
+  "authors": [
+    {
+      "name": "form4 GmbH",
+      "email": "typo3@form4.de"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "FORM4\\Form4Socialmedialinks\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "form4_socialmedialinks"
+    }
+  }
+}
