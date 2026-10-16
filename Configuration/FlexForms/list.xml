@@ -1,0 +1,25 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <ROOT>
+        <el>
+            <settings.elements>
+                <label>LLL:EXT:form4_socialmedialinks/Resources/Private/Language/locallang_db.xlf:tt_content.plugin.flexform.elements</label>
+                <config>
+                    <type>group</type>
+                    <allowed>tx_form4socialmedialinks_domain_model_link</allowed>
+                    <size>5</size>
+                    <maxitems>20</maxitems>
+                    <minitems>1</minitems>
+                    <show_thumbs>1</show_thumbs>
+                    <wizards>
+                        <suggest>
+                            <type>suggest</type>
+                        </suggest>
+                    </wizards>
+                </config>
+            </settings.elements>
+        </el>
+    </ROOT>
+</T3DataStructure>

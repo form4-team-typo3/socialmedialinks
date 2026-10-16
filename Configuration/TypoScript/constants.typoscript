@@ -1,0 +1,15 @@
+
+plugin.tx_form4socialmedialinks_list {
+	view {
+		# cat=plugin.tx_form4socialmedialinks_list/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:form4_socialmedialinks/Resources/Private/Templates/
+		# cat=plugin.tx_form4socialmedialinks_list/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:form4_socialmedialinks/Resources/Private/Partials/
+		# cat=plugin.tx_form4socialmedialinks_list/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:form4_socialmedialinks/Resources/Private/Layouts/
+	}
+	settings {
+		# cat=plugin.tx_form4socialmedialinks_list//b; type=boolean; label=Add extension css file
+		css_enable =
+	}
+}

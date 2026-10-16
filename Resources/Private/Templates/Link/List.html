@@ -1,0 +1,63 @@
+{namespace vh=FORM4\Form4Socialmedialinks\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+	<ul>
+		<f:for each="{links}" as="link">
+			<f:if condition="{link.type} == 0">
+
+				<f:then>
+					<f:comment>type = link</f:comment>
+					<f:if condition="{link.icon}">
+						<f:then>
+							<li class="tx-form4socialmedialinks-link">
+								<f:link.external uri="{link.url -> vh:replace(search : marker, replace: replace)}" title="{link.title}">
+									<f:image image="{link.icon}" title="{link.title}" />
+								</f:link.external>
+							</li>
+						</f:then>
+						<f:else>
+                            <f:variable name="iconName" value="" />
+                            <f:if condition="{link.socialMediaIcon} == 'facebook'">
+                                <f:variable name="iconName" value="social-facebook" />
+                            </f:if>
+                            <f:if condition="{link.socialMediaIcon} == 'x'">
+                                <f:variable name="iconName" value="x-logo" />
+                            </f:if>
+                            <f:if condition="{link.socialMediaIcon} == 'youtube'">
+                                <f:variable name="iconName" value="social-youtube" />
+                            </f:if>
+                            <li>
+                                <f:render partial="Link" arguments="{
+                                    href: '{link.url -> vh:replace(search: marker, replace: replace)}',
+                                    text: '{link.title}',
+                                    linkType: 'secondary',
+                                    size: 'medium',
+                                    background: 'structure-dark',
+                                    icon: '{iconName}',
+                                    iconPosition: 'before',
+                                    external: 1,
+                                    title: '{link.title}'
+                                }" />
+                            </li>
+						</f:else>
+					</f:if>
+				</f:then>
+				<f:else>
+					<f:comment>type = script</f:comment>
+					<li class="tx-form4socialmedialinks-script">
+						<f:format.raw>{link.html -> vh:replace(search : marker, replace: replace)}</f:format.raw>
+					</li>
+				</f:else>
+			</f:if>
+			<f:comment>
+				{link.title}
+				{link.identifier}
+				{link.type}
+				{link.url}
+				{link.html}
+				{link.icon}
+			</f:comment>
+		</f:for>
+	</ul>
+</f:section>

@@ -1,0 +1,78 @@
+##################################################
+# Extbase Settings
+##################################################
+
+plugin.tx_form4socialmedialinks_list {
+	view {
+		templateRootPaths.0 = {$plugin.tx_form4socialmedialinks_list.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_form4socialmedialinks_list.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_form4socialmedialinks_list.view.layoutRootPath}
+	}
+	settings {
+		css_enable = {$plugin.tx_form4socialmedialinks_list.settings.css_enable}
+	}
+}
+
+##################################################
+# add custom markers to this configuration
+##################################################
+
+plugin.tx_form4socialmedialinks_list.markers {
+	# only use of data possible, not field
+
+	URL = COA
+	URL {
+		10 = TEXT
+		10.typolink {
+			parameter.data = page:uid
+			returnLast = url
+			forceAbsoluteUrl = 1
+		}
+		stdWrap.rawUrlEncode = 1
+	}
+
+	URLGET = COA
+	URLGET {
+		10 = TEXT
+		10.typolink {
+			parameter.data = page:uid
+			returnLast = url
+			addQueryString = 1
+			addQueryString.exclude = id
+			forceAbsoluteUrl = 1
+		}
+		stdWrap.rawUrlEncode = 1
+	}
+
+	TITLE = TEXT
+	TITLE.data = page:title
+	TITLE.htmlSpecialChars = 1
+	TITLE.rawUrlEncode = 1
+
+	TWITTER_FOLLOWME_ACCOUNT = TEXT
+	TWITTER_FOLLOWME_ACCOUNT.value = followme
+
+	TWITTER_HASHTAG = TEXT
+	TWITTER_HASHTAG.value = hastag
+
+	TWITTER_USERNAME = TEXT
+	TWITTER_USERNAME.value = username
+
+	#marker = value
+}
+
+##################################################
+# TypoScript Configuration
+##################################################
+
+plugin.tx_form4socialmedialinks_list.show = USER
+plugin.tx_form4socialmedialinks_list.show {
+	userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+	controller = Link
+	pluginName = List
+	extensionName = Form4Socialmedialinks
+	vendorName = FORM4
+	settings =< plugin.tx_form4socialmedialinks_list.settings
+	persistence =< plugin.tx_form4socialmedialinks_list.persistence
+	view =< plugin.tx_form4socialmedialinks_list.view
+}
